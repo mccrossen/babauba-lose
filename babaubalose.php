@@ -16,6 +16,7 @@ foreach($lose_file as $file){
 	$count = 0;
 	while (!feof($file_handle)) {
 	  $line = trim(fgets($file_handle));
+	  if($line == "losnummer") { continue; }
 	  $lose[] = $line;
 	  echo $line ." ";
 	  $lnbr++;

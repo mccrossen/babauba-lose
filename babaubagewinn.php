@@ -21,7 +21,9 @@ foreach($lose_file as $file){
 	$file_handle = fopen($file, 'r');
 
 	while (!feof($file_handle)) {
-		$lose[] = trim(fgets($file_handle));
+		$los = trim(fgets($file_handle));
+		if($los == "losnummer") { continue; }
+		$lose[] = $los;
 	}
 	
 	fclose($file_handle);
