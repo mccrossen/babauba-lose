@@ -1,6 +1,6 @@
 <?php
 $babauba_los_url = 'https://babauba.de/gewinnlose';
-$lose_file[] = 'losnummern.txt';
+include("lose_file.php");
 
 ### Babauba URL auslesen ANFANG
 $data = file_get_contents($babauba_los_url);

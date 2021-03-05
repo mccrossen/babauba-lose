@@ -1,5 +1,5 @@
 <?php
-$lose_file[] = 'losnummern.txt';
+include("lose_file.php");
 
 echo "<a href='babaubagewinn.php'>Losgewinn&uuml;bersicht</a>";
 
